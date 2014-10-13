@@ -1,0 +1,23 @@
+### WrathStatTrack Plugin Configuration ###
+
+## List of possible Lores for each listed Material ##
+## The percentage is out of the sum of all the percentages in each List ##
+RANDOM_LORES:
+  # List of Lores for a given Material #
+  # Syntax = 'Lore=Percent'
+  # Materials (http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html) #
+  BOW:
+  - '&aStatTrack Bow: Renegade=20'
+  - '&bStatTrack Bow: Punisher=50'
+  - '&eStatTrack Bow: Assault=30'
+  DIAMOND_SWORD:
+  - '&aStatTrack Sword: Slayer=80'
+  - '&bStatTrack Sword: Destoryer=50'
+  - '&eStatTrack Sword: Fighter=30'
+  
+## Formatting of the custom Lore ##
+LORE_FORMAT:
+- '%RANDOM_LORE%'
+- '&eCrafted By: &6%CREATOR%'
+- '&cPvP Kills: %PVP_KILLS%'
+- '&aPvE Kills: %PVE_KILLS%'

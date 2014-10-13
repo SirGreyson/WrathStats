@@ -1,0 +1,6 @@
+name: WrathStatTrack
+version: 1.0
+description: Item stat-tracking plugin 
+author: SirReason
+
+main: co.reasondev.wrath.StatTrack
