@@ -92,7 +92,7 @@ public class PlayerListener implements Listener {
         String[] args = itemStack.getType().toString().toLowerCase().split("_");
         for (int i = 0; i < args.length; i++)
             sb.append((i == 0 ? "" : " ") + args[i].substring(0, 1).toUpperCase() + args[i].substring(1));
-        return sb.toString().replace("_", " ");
+        return ChatColor.AQUA + sb.toString().replace("_", " ");
     }
 
     private void sendJSONDeathMessage(String player, String killer, ItemStack weapon) {
