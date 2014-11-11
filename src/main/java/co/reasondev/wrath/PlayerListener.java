@@ -86,7 +86,7 @@ public class PlayerListener implements Listener {
 
     private String getItemName(ItemStack itemStack) {
         if (itemStack.hasItemMeta() && itemStack.getItemMeta().hasDisplayName()) {
-            return itemStack.getItemMeta().getDisplayName();
+            return ChatColor.AQUA + ChatColor.stripColor(itemStack.getItemMeta().getDisplayName());
         }
         StringBuilder sb = new StringBuilder("");
         String[] args = itemStack.getType().toString().toLowerCase().split("_");
